@@ -82,6 +82,38 @@ int main(int argc, const char *argv[]) {
     char *const p_str1 = str;
     *p_str1 = 'l';
 //    p_str1 = new char[3]; error  p_str1 本身是常量，无法进行赋值
+    cout << "===================================" << endl;
+
+    struct MyStruct {
+        int code;
+        char *name; /* new 进行初始化的时候，只会分配指针的空间大小(8个bit) */
+        double price;
+
+    };
+    auto *myStruct = new MyStruct();
+    myStruct->name = new char[30];
+    strcpy(myStruct->name, "hello world!");
+    (*myStruct).code = 1;
+    (*myStruct).price = 6999.9;
+
+    cout << "(*myStruct).code = " << (*myStruct).code << endl;
+    cout << "myStruct->name = " << myStruct->name << endl;
+    cout << "(*myStruct).price = " << (*myStruct).price << endl;
+    cout << "===================================" << endl;
+
+    union MyUnion {
+        int code1;
+        long code2;
+    };
+
+    auto *myUnion = new MyUnion();
+    myUnion->code1 = 100;
+    cout << "myUnion->code1 = " << myUnion->code1 << endl;
+    cout << "myUnion->code2 = " << myUnion->code2 << endl;
+
+    myUnion->code2 = 400;
+    cout << "myUnion->code1 = " << myUnion->code1 << endl;
+    cout << "myUnion->code2 = " << myUnion->code2 << endl;
 
     return 0;
 }
