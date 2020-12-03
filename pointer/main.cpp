@@ -6,6 +6,8 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <array>
 
 using namespace std;
 
@@ -43,23 +45,23 @@ int main(int argc, const char *argv[]) {
     cout << "*pd = " << *pd << endl;
     cout << "===================================" << endl;
 
-    int *array;
-    array = new int[10];
-    array[0] = 1;
-    array[1] = 2;
-    array[2] = 3;
-    array[3] = 4;
-    delete[] array;
+    int *arr;
+    arr = new int[10];
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    arr[3] = 4;
+    delete[] arr;
 
-    array = new int[20];
-    array[0] = 10;
-    array[1] = 11;
+    arr = new int[20];
+    arr[0] = 10;
+    arr[1] = 11;
 
-    cout << "array[0] = " << array[0] << endl;
-    cout << "array[1] = " << array[1] << endl;
-    cout << "array[2] = " << *(array + 2) << endl;
-    delete[] array;
-    array = nullptr;
+    cout << "array[0] = " << arr[0] << endl;
+    cout << "array[1] = " << arr[1] << endl;
+    cout << "array[2] = " << *(arr + 2) << endl;
+    delete[] arr;
+    arr = nullptr;
     cout << "===================================" << endl;
 
 
@@ -114,6 +116,60 @@ int main(int argc, const char *argv[]) {
     myUnion->code2 = 400;
     cout << "myUnion->code1 = " << myUnion->code1 << endl;
     cout << "myUnion->code2 = " << myUnion->code2 << endl;
+    cout << "===================================" << endl;
 
+    vector<int> values;
+    values.push_back(1);
+    values.push_back(2);
+    values.push_back(3);
+    for (int v : values) {
+        cout << v << endl;
+    }
+    cout << "values size: " << values.size() << endl;
+    values.pop_back();
+    cout << "pop_back() after: " << endl;
+    for (int v : values) {
+        cout << v << endl;
+    }
+    cout << "remove first after: " << endl;
+    values.erase(values.begin());
+    for (int v : values) {
+        cout << v << endl;
+    }
+    cout << "values.at(0) = " << values.at(0) << endl;
+    cout << "===================================" << endl;
+
+
+    // 数组模板(c++ 11)
+    /**
+     * 数组模板和数组的区别
+     * 1. 数组和数组模板在后期初始化的时候不同
+     * 2. 数组的大小可以使用变量，数组模板的大小不能使用变量，可以使用常量
+     * 3. 数组有时候可以当做指针使用，数组模板不可以
+     * 4. 将数组赋值给指针是引用复制，数组模板之间赋值是值复制
+     */
+    const int size = 5;
+    array<string, size> productNames = {"mate", "iphone"};
+    array<int, 3> codes1{};
+    codes1 = {1, 2, 3};
+    int codes3[3];
+    codes3[0] = 66;
+    // codes = {1,2,3}; error
+    cout << "productNames[0] = " << productNames[0] << endl;
+    if (productNames[4].empty()) {
+        cout << "productNames[4] = \"\"" << endl;
+    }
+
+    array<int, 3> codes2{};
+    codes2 = codes1;
+    codes2[0] = 33;
+    cout << "codes1[0] = " << codes1[0] << endl;
+    cout << "codes2[0] = " << codes2[0] << endl;
+
+    int *pCode = codes3;
+    pCode[0] = 22;
+
+    cout << "codes3[0] = " << codes3[0] << endl;
+    cout << "pCode[0] = " << pCode[0] << endl;
     return 0;
 }
