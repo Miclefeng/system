@@ -4,11 +4,11 @@
 
 #include <stdio.h>
 
-void HelloWorld(){
-    printf("debug ");
+void HelloWorld() {
+  printf("debug\n");
 }
 
 int main() {
   HelloWorld();
-    return 0;
+  return 0;
 }
