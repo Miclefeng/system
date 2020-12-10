@@ -1,0 +1,11 @@
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/edit_cache.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/main.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/03_recursion_hanoi.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/rebuild_cache.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/03_variable_types_and_scope.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/03_guess_number.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/02_data_types_char.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/02_variable.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/02_data_types_float.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/02_data_types_int.c.dir
+/Users/miclefengzss/workspace/system/c/base/imooc/cmake-build-debug-gcc/CMakeFiles/02_constant.c.dir
