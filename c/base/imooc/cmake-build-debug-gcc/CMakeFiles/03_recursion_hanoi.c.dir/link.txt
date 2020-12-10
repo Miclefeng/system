@@ -1,1 +1,0 @@
-/usr/local/Cellar/gcc/10.2.0/bin/gcc-10 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/03_recursion_hanoi.c.dir/03_recursion_hanoi.c.o  -o 03_recursion_hanoi.c 
