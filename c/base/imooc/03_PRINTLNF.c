@@ -4,11 +4,12 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include <io_utils.h>
 
-#define PRINTLNF(format, ...) printf("("__FILE__":%d) %s: "format"\n", __LINE__, __FUNCTION__, ##__VA_ARGS__)
+// #define PRINTLNF(format, ...) printf("("__FILE__":%d) %s: "format"\n", __LINE__, __FUNCTION__, ##__VA_ARGS__)
 
 // #value 获取原样输入的参数
-#define PRINT_INT(value) PRINTLNF(#value" : %d", value)
+// #define PRINT_INT(value) PRINTLNF(#value" : %d", value)
 
 // "Hello ""world" ==> "Hello world"
 // __FILE__  获取文件所在位置
