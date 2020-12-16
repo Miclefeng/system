@@ -8,7 +8,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories("include")
 
-file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
+file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/code-*/*.c")
 foreach (file ${files})
     get_filename_component(name ${file} NAME)
     add_executable(${name} ${file})
