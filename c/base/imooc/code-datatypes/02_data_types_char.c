@@ -5,8 +5,7 @@
 #include <stdio.h>
 #include <stddef.h>
 
-int main()
-{
+int main() {
   // 字符集 ASCII 127
   char a = 'a'; // 97
   char char_0 = '0';// 48
