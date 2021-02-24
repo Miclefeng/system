@@ -34,6 +34,7 @@ int main() {
     fflush(stdout);
     fclose(file);
   } else {
+    PRINT_INT(errno);
     perror("fopen");
   }
 
