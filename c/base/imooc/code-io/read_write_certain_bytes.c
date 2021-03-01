@@ -19,6 +19,7 @@ void Echo() {
         puts("EOF");
         fwrite(buffer, sizeof(buffer[0]), bytes_read, stdout);
       } else if (ferror(stdin)) {
+        puts(strerror(errno));
         perror("Error read from stdin.");
       }
       break;
