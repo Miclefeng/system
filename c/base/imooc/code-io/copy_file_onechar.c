@@ -4,8 +4,6 @@
 
 #include <stdio.h>
 #include <io_utils.h>
-#include <errno.h>
-#include <string.h>
 
 #define COPY_SUCCESS 0
 #define COPY_ILLEGAL_ARGUMENTS -1
