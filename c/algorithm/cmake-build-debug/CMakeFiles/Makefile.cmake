@@ -46,6 +46,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/simple_bucket_sort.c.dir/DependInfo.cmake"
+  "CMakeFiles/select_sort_2.c.dir/DependInfo.cmake"
   "CMakeFiles/select_sort.c.dir/DependInfo.cmake"
   "CMakeFiles/bubbling_sort.c.dir/DependInfo.cmake"
+  "CMakeFiles/bubble_sort.c.dir/DependInfo.cmake"
   )

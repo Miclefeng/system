@@ -54,8 +54,10 @@ CMAKE_BINARY_DIR = /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-
 
 # The main recursive "all" target.
 all: CMakeFiles/simple_bucket_sort.c.dir/all
+all: CMakeFiles/select_sort_2.c.dir/all
 all: CMakeFiles/select_sort.c.dir/all
 all: CMakeFiles/bubbling_sort.c.dir/all
+all: CMakeFiles/bubble_sort.c.dir/all
 
 .PHONY : all
 
@@ -66,8 +68,10 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/simple_bucket_sort.c.dir/clean
+clean: CMakeFiles/select_sort_2.c.dir/clean
 clean: CMakeFiles/select_sort.c.dir/clean
 clean: CMakeFiles/bubbling_sort.c.dir/clean
+clean: CMakeFiles/bubble_sort.c.dir/clean
 
 .PHONY : clean
 
@@ -78,7 +82,7 @@ clean: CMakeFiles/bubbling_sort.c.dir/clean
 CMakeFiles/simple_bucket_sort.c.dir/all:
 	$(MAKE) -f CMakeFiles/simple_bucket_sort.c.dir/build.make CMakeFiles/simple_bucket_sort.c.dir/depend
 	$(MAKE) -f CMakeFiles/simple_bucket_sort.c.dir/build.make CMakeFiles/simple_bucket_sort.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target simple_bucket_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target simple_bucket_sort.c"
 .PHONY : CMakeFiles/simple_bucket_sort.c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,13 +103,40 @@ CMakeFiles/simple_bucket_sort.c.dir/clean:
 .PHONY : CMakeFiles/simple_bucket_sort.c.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/select_sort_2.c.dir
+
+# All Build rule for target.
+CMakeFiles/select_sort_2.c.dir/all:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/depend
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target select_sort_2.c"
+.PHONY : CMakeFiles/select_sort_2.c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/select_sort_2.c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/select_sort_2.c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/select_sort_2.c.dir/rule
+
+# Convenience name for target.
+select_sort_2.c: CMakeFiles/select_sort_2.c.dir/rule
+
+.PHONY : select_sort_2.c
+
+# clean rule for target.
+CMakeFiles/select_sort_2.c.dir/clean:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/clean
+.PHONY : CMakeFiles/select_sort_2.c.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/select_sort.c.dir
 
 # All Build rule for target.
 CMakeFiles/select_sort.c.dir/all:
 	$(MAKE) -f CMakeFiles/select_sort.c.dir/build.make CMakeFiles/select_sort.c.dir/depend
 	$(MAKE) -f CMakeFiles/select_sort.c.dir/build.make CMakeFiles/select_sort.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target select_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target select_sort.c"
 .PHONY : CMakeFiles/select_sort.c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -132,7 +163,7 @@ CMakeFiles/select_sort.c.dir/clean:
 CMakeFiles/bubbling_sort.c.dir/all:
 	$(MAKE) -f CMakeFiles/bubbling_sort.c.dir/build.make CMakeFiles/bubbling_sort.c.dir/depend
 	$(MAKE) -f CMakeFiles/bubbling_sort.c.dir/build.make CMakeFiles/bubbling_sort.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target bubbling_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target bubbling_sort.c"
 .PHONY : CMakeFiles/bubbling_sort.c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -151,6 +182,33 @@ bubbling_sort.c: CMakeFiles/bubbling_sort.c.dir/rule
 CMakeFiles/bubbling_sort.c.dir/clean:
 	$(MAKE) -f CMakeFiles/bubbling_sort.c.dir/build.make CMakeFiles/bubbling_sort.c.dir/clean
 .PHONY : CMakeFiles/bubbling_sort.c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bubble_sort.c.dir
+
+# All Build rule for target.
+CMakeFiles/bubble_sort.c.dir/all:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/depend
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target bubble_sort.c"
+.PHONY : CMakeFiles/bubble_sort.c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bubble_sort.c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bubble_sort.c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bubble_sort.c.dir/rule
+
+# Convenience name for target.
+bubble_sort.c: CMakeFiles/bubble_sort.c.dir/rule
+
+.PHONY : bubble_sort.c
+
+# clean rule for target.
+CMakeFiles/bubble_sort.c.dir/clean:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/clean
+.PHONY : CMakeFiles/bubble_sort.c.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

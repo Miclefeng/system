@@ -1,5 +1,7 @@
 /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/simple_bucket_sort.c.dir
+/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/select_sort_2.c.dir
+/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/select_sort.c.dir
 /Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/bubbling_sort.c.dir
+/Users/miclefengzss/workspace/system/c/algorithm/cmake-build-debug/CMakeFiles/bubble_sort.c.dir

@@ -124,6 +124,19 @@ simple_bucket_sort.c/fast:
 .PHONY : simple_bucket_sort.c/fast
 
 #=============================================================================
+# Target rules for targets named select_sort_2.c
+
+# Build rule for target.
+select_sort_2.c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_sort_2.c
+.PHONY : select_sort_2.c
+
+# fast build rule for target.
+select_sort_2.c/fast:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/build
+.PHONY : select_sort_2.c/fast
+
+#=============================================================================
 # Target rules for targets named select_sort.c
 
 # Build rule for target.
@@ -148,6 +161,46 @@ bubbling_sort.c: cmake_check_build_system
 bubbling_sort.c/fast:
 	$(MAKE) -f CMakeFiles/bubbling_sort.c.dir/build.make CMakeFiles/bubbling_sort.c.dir/build
 .PHONY : bubbling_sort.c/fast
+
+#=============================================================================
+# Target rules for targets named bubble_sort.c
+
+# Build rule for target.
+bubble_sort.c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bubble_sort.c
+.PHONY : bubble_sort.c
+
+# fast build rule for target.
+bubble_sort.c/fast:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/build
+.PHONY : bubble_sort.c/fast
+
+code-sort/bubble_sort.o: code-sort/bubble_sort.c.o
+
+.PHONY : code-sort/bubble_sort.o
+
+# target to build an object file
+code-sort/bubble_sort.c.o:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/code-sort/bubble_sort.c.o
+.PHONY : code-sort/bubble_sort.c.o
+
+code-sort/bubble_sort.i: code-sort/bubble_sort.c.i
+
+.PHONY : code-sort/bubble_sort.i
+
+# target to preprocess a source file
+code-sort/bubble_sort.c.i:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/code-sort/bubble_sort.c.i
+.PHONY : code-sort/bubble_sort.c.i
+
+code-sort/bubble_sort.s: code-sort/bubble_sort.c.s
+
+.PHONY : code-sort/bubble_sort.s
+
+# target to generate assembly for a file
+code-sort/bubble_sort.c.s:
+	$(MAKE) -f CMakeFiles/bubble_sort.c.dir/build.make CMakeFiles/bubble_sort.c.dir/code-sort/bubble_sort.c.s
+.PHONY : code-sort/bubble_sort.c.s
 
 code-sort/bubbling_sort.o: code-sort/bubbling_sort.c.o
 
@@ -203,6 +256,33 @@ code-sort/select_sort.c.s:
 	$(MAKE) -f CMakeFiles/select_sort.c.dir/build.make CMakeFiles/select_sort.c.dir/code-sort/select_sort.c.s
 .PHONY : code-sort/select_sort.c.s
 
+code-sort/select_sort_2.o: code-sort/select_sort_2.c.o
+
+.PHONY : code-sort/select_sort_2.o
+
+# target to build an object file
+code-sort/select_sort_2.c.o:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/code-sort/select_sort_2.c.o
+.PHONY : code-sort/select_sort_2.c.o
+
+code-sort/select_sort_2.i: code-sort/select_sort_2.c.i
+
+.PHONY : code-sort/select_sort_2.i
+
+# target to preprocess a source file
+code-sort/select_sort_2.c.i:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/code-sort/select_sort_2.c.i
+.PHONY : code-sort/select_sort_2.c.i
+
+code-sort/select_sort_2.s: code-sort/select_sort_2.c.s
+
+.PHONY : code-sort/select_sort_2.s
+
+# target to generate assembly for a file
+code-sort/select_sort_2.c.s:
+	$(MAKE) -f CMakeFiles/select_sort_2.c.dir/build.make CMakeFiles/select_sort_2.c.dir/code-sort/select_sort_2.c.s
+.PHONY : code-sort/select_sort_2.c.s
+
 code-sort/simple_bucket_sort.o: code-sort/simple_bucket_sort.c.o
 
 .PHONY : code-sort/simple_bucket_sort.o
@@ -237,16 +317,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... simple_bucket_sort.c"
+	@echo "... select_sort_2.c"
+	@echo "... edit_cache"
 	@echo "... select_sort.c"
 	@echo "... bubbling_sort.c"
+	@echo "... bubble_sort.c"
+	@echo "... code-sort/bubble_sort.o"
+	@echo "... code-sort/bubble_sort.i"
+	@echo "... code-sort/bubble_sort.s"
 	@echo "... code-sort/bubbling_sort.o"
 	@echo "... code-sort/bubbling_sort.i"
 	@echo "... code-sort/bubbling_sort.s"
 	@echo "... code-sort/select_sort.o"
 	@echo "... code-sort/select_sort.i"
 	@echo "... code-sort/select_sort.s"
+	@echo "... code-sort/select_sort_2.o"
+	@echo "... code-sort/select_sort_2.i"
+	@echo "... code-sort/select_sort_2.s"
 	@echo "... code-sort/simple_bucket_sort.o"
 	@echo "... code-sort/simple_bucket_sort.i"
 	@echo "... code-sort/simple_bucket_sort.s"
