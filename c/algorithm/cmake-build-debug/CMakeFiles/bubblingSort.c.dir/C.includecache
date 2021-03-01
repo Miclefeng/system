@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/miclefengzss/workspace/system/c/algorithm/code-sort/bubblingSort.c
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+
