@@ -26,8 +26,8 @@ int T2(void *arg) {
 int main() {
   thrd_t thrd1, thrd2;
 
-  thrd_create(&thrd1, T1, NULL);
   thrd_create(&thrd2, T2, NULL);
+  thrd_create(&thrd1, T1, NULL);
 
   thrd_join(thrd1, NULL);
   thrd_join(thrd2, NULL);
